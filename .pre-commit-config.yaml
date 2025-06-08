@@ -1,0 +1,17 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb', '64'] # Set to 64KB to avoid large files in the repository
+      - id: check-case-conflict
+      - id: check-yaml
+      - id: check-json
+      - id: check-xml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: fix-byte-order-marker
+      - id: mixed-line-ending
+        args: ['--fix=lf'] # Ensure line endings are consistent (LF)
+      - id: pretty-format-json
+        args: ['--autofix', '--indent', '2']

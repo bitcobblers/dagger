@@ -1,39 +1,40 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <IsRoslynComponent>true</IsRoslynComponent>
-        <IncludeBuildOutput>false</IncludeBuildOutput>
-        <DevelopmentDependency>true</DevelopmentDependency>
-        <EnableDefaultItem>false</EnableDefaultItem>
-        <GenerateDocumentationFile>false</GenerateDocumentationFile>
-        <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
-        <IsPackable>true</IsPackable>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsRoslynComponent>true</IsRoslynComponent>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <EnableDefaultItem>false</EnableDefaultItem>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <IsPackable>true</IsPackable>
 
-        <LangVersion>12</LangVersion>
-    </PropertyGroup>
+    <LangVersion>12</LangVersion>
+    <NoWarn>CA1016</NoWarn>
+  </PropertyGroup>
 
-    <PropertyGroup Label="Codegen Settings">
-        <EmitCompilerGeneratedFiles>false</EmitCompilerGeneratedFiles>
-        <AnalysisLevel>latest-recommended</AnalysisLevel>
-    </PropertyGroup>
-    
-    <ItemGroup Label="Dependencies">
-      <PackageReference Include="DotNet.ReproducibleBuilds">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="GitVersion.MsBuild">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="JetBrains.Annotations" />
-      <PackageReference Include="Microsoft.CodeAnalysis.Analyzers">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
-      <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" />
-    </ItemGroup>
+  <PropertyGroup Label="Codegen Settings">
+    <EmitCompilerGeneratedFiles>false</EmitCompilerGeneratedFiles>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup Label="Dependencies">
+    <PackageReference Include="DotNet.ReproducibleBuilds">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="GitVersion.MsBuild">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="JetBrains.Annotations"/>
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp"/>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces"/>
+  </ItemGroup>
 
 </Project>
