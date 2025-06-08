@@ -1,8 +1,4 @@
 <Project>
-    <ImportGroup>
-        <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
-    </ImportGroup>
-
     <PropertyGroup Label="Defaults">
         <TreatWarningsAsErrors Condition="'$(Configuration)' =='Release'">true</TreatWarningsAsErrors>
         <ImplicitUsings>enable</ImplicitUsings>

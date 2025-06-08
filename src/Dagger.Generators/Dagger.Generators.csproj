@@ -8,7 +8,6 @@
         <EnableDefaultItem>false</EnableDefaultItem>
         <GenerateDocumentationFile>false</GenerateDocumentationFile>
         <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
-        <NoWarn>RS1038;RS2007</NoWarn>
         <IsPackable>true</IsPackable>
 
         <LangVersion>12</LangVersion>
