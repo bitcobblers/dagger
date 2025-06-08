@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dagger.Cli", "src\Dagger.Cli\Dagger.Cli.csproj", "{CAB256BF-D106-418B-9A09-C8AF606C404F}"
 EndProject

@@ -1,4 +1,4 @@
-﻿namespace Dagger.Cli;
+namespace Dagger.Cli;
 
 class Program
 {
