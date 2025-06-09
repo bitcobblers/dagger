@@ -1,0 +1,29 @@
+{
+  "customizations": {
+    "jetbrains": {
+      "settings": {
+        "com.intellij:app:BuiltInServerOptions.builtInServerPort": 55307,
+        "com.intellij:app:HttpConfigurable.use_proxy_pac": true,
+        "org.jetbrains.plugins.terminal:app:TerminalOptionsProvider.myShellPath": "pwsh"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:2": {
+      "additionalVersions": "6.0",
+      "dotnetRuntimeVersions": "lts",
+      "version": "8.0"
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "optimize": true,
+      "toolsToInstall": [
+        "pipenv"
+      ],
+      "version": "3.12"
+    }
+  },
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "name": "Dagger (.NET)",
+  "postCreateCommand": "pip install pre-commit && pre-commit install",
+  "remoteUser": "root"
+}
