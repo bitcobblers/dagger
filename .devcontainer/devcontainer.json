@@ -24,6 +24,5 @@
   },
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "name": "Dagger (.NET)",
-  "postCreateCommand": "pip install pre-commit && pre-commit install",
-  "remoteUser": "root"
+  "postCreateCommand": "pip install pre-commit && pre-commit install"
 }
