@@ -3,6 +3,9 @@
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+      <PackAsTool>true</PackAsTool>
+      <ToolCommandName>dagger</ToolCommandName>
+      <PackageOutputPath>./nupkg</PackageOutputPath>
     </PropertyGroup>
 
     <ItemGroup>
